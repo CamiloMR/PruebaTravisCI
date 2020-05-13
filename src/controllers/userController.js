@@ -48,6 +48,18 @@ User.prototype = {
             return msg.FAIL_RESPONSE(error)
         }
     },
+    allUser: async () =>{
+        try {
+            let res = await db. executeSimpleQuery('SELECT * FROM users;')
+            if(res.length > 0){
+                return msg.SUCCESS_RESPONSE(res)
+            }else{
+                return msg.SUCCESS_RESPONSE('No hay usuarios registrados')
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    },
     findUser: async (id) =>{
         try {
             let res = await db.executeQuery("SELECT * FROM users WHERE id_user = ?", id)

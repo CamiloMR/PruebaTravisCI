@@ -51,4 +51,10 @@ router.get('/profile', async (req, res) => {
     return res.status(result.status).send(result.info)
 })
 
+router.get('/', async (req, res) => {
+    let user = new User()
+    let result = await user.allUser()
+    return res.status(result.status).send(result)
+})
+
 module.exports = router
