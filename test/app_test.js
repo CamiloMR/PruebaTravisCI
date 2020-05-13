@@ -4,7 +4,7 @@ const expect = require('chai').expect
 
 
 chai.use(chaiHttp);
-const url= 'https://app-barbershop.herokuapp.com/'
+const url= 'https://app-barbershop.herokuapp.com'
 
 
 describe('Insert in DB: ',()=>{
