@@ -1,0 +1,5 @@
+Language: node_js
+branches:
+  only:
+  - master
+  - PruebaCI
