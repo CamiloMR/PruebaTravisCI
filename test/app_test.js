@@ -17,26 +17,26 @@ describe('Insert in DB: ',()=>{
         })
     })
 
-    it('Get barbershops', () =>{
-        chai.request(url)
-        .get('api/v1/barbershop/1152713078')
-        .end((err,res) => {
-            expect(res).to.have.status(200)
-            done()
-        })
-    })
+    // it('Get barbershops', () =>{
+    //     chai.request(url)
+    //     .get('api/v1/barbershop/1152713078')
+    //     .end((err,res) => {
+    //         expect(res).to.have.status(200)
+    //         done()
+    //     })
+    // })
 
-    it('Get single user', () =>{
-        chai.request(url)
-        .get('api/v1/user/profile')
-        .send({
-            id_user: 1036683861
-        })
-        .end((err,res) => {
-            expect(res).to.have.status(200)
-            done()
-        })
-    })
+    // it('Get single user', () =>{
+    //     chai.request(url)
+    //     .get('api/v1/user/profile')
+    //     .send({
+    //         id_user: 1036683861
+    //     })
+    //     .end((err,res) => {
+    //         expect(res).to.have.status(200)
+    //         done()
+    //     })
+    // })
 
     // it('Insertar barbershop', (done) => {
     //     chai.request(url)
