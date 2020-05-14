@@ -10,7 +10,7 @@ const url= 'https://app-barbershop.herokuapp.com'
 describe('Insert in DB: ',()=>{
     it('Get Users', (done) => {
         chai.request(url)
-        .get('/api/v1/user/')
+        .get('/api/v1/sss/')
         .end((err,res) => {
             expect(res).to.have.status(200)
             done()

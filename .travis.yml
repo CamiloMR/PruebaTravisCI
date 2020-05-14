@@ -2,12 +2,16 @@ language: node_js
 node_js:
   - node
 
-branches:
-  only:
-    - master
-
 install:
   - npm install
 
 script:
   - npm test
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    all_branches: true
+
